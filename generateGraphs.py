@@ -11,6 +11,12 @@ yf.pdr_override()
 start= dt.datetime(2006,1,1)
 end = dt.datetime(2016,1,1)
 
+import cgi
+form = cgi.FieldStorage()
+searchterm = form.getvalue('ticks')
+
+print(searchterm)
+
 tickers = ['BAC','C','GS','JPM','MS','WF']
 
 d = {}
