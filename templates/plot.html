@@ -23,11 +23,16 @@
          <div class="cancel-icon">
             <span class="fas fa-times"></span>
          </div>
-         <form action="plot.html" method="get">
-            <input type="search" class="search-data" placeholder="Search" required name='ticks'>
+         <form action="." method="POST">
+            <input type="search" class="search-data" placeholder="Search" required name='query'>
             <button type="submit" class="fas fa-search"></button>
          </form>
       </nav>
+      <div class="plot">
+         <div class="png">
+            <img src="static/plot.png" alt="plot" width="1920"/>
+         </div>
+      </div>
       <script>
          const menuBtn = document.querySelector(".menu-icon span");
          const searchBtn = document.querySelector(".search-icon");

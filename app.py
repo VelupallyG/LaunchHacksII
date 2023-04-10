@@ -30,8 +30,8 @@ def getValue():
     bank_stocks.columns.names = ['Bank Ticker','Stock Info']
 
     bank_stocks.xs(key='Close',axis=1,level='Stock Info').plot(label=tick,figsize=(12,4))
-    plt.savefig('stockGraph.png')
-    
+    plt.savefig('static/plot.png')
+
     return render_template('plot.html', ticks=ticks)
 
 if __name__ == '__main__':
